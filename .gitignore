@@ -1,0 +1,11 @@
+# Ignore Terraform state and cache
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Ignore SSH keys and sensitive files
+*.pem
+*.key
+*.pub
+id_rsa
+id_rsa.pub
