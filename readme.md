@@ -43,21 +43,21 @@ This project uses **Terraform** to provision an **Amazon EC2** instance running 
 git clone https://github.com/NikolaKitanovicTF/ec2-nginx-setup.git
 cd ec2-nginx-setup
 
-    Initialize Terraform
+Initialize Terraform
 
 terraform init
 
-    Review the execution plan
+Review the execution plan
 
 terraform plan
 
-    Apply the configuration
+Apply the configuration
 
 terraform apply
 
 Confirm with yes when prompted.
 
-    Access your NGINX server
+ Access your NGINX server
 
 Once Terraform finishes, it will output the public IP:
 
@@ -102,17 +102,7 @@ id_rsa.pub
 
 Notes
 
-    The security group allows access from 0.0.0.0/0 — good for testing, not secure for production.
-
-    You can extend this project by adding:
-
-        A custom VPC and subnets
-
-        Route 53 domain mapping
-
-        HTTPS via Certbot or an AWS Load Balancer
-
-        Terraform modules
+The security group allows access from 0.0.0.0/0 — good for testing, not secure for production.
 
 Author
 
